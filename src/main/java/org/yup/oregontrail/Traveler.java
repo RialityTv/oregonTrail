@@ -34,7 +34,7 @@ public class Traveler {
     public String eat(){
 
         //Consumes 20 of the traveler's food. If the traveler doesn't have 20 food, the traveler is no longer healthy.
-        if(this.getFood() > 20){
+        if(this.getFood() >= 20){
             this.setFood(this.getFood() - 20);
             this.setHealthy(true);
             this.setHealth(100);
